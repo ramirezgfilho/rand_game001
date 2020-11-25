@@ -14,6 +14,7 @@ public class FollowCamera : MonoBehaviour
 	void Start()
 	{
 		targetPos = transform.position;
+		offset.y = 0.06f;
 	}
 
 	// Update is called once per frame

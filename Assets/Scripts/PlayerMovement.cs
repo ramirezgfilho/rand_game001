@@ -34,14 +34,6 @@ public class PlayerMovement : MonoBehaviour
 		if (Input.GetButtonDown("Jump"))
 		{
 			jump = true;
-
-			if (controller.checkPotion())
-			{
-				controller.m_JumpForce = 400f;
-			} else
-            {
-				controller.m_JumpForce = 200f;
-			}
 		}
 
 		if (Input.GetButtonDown("Vertical"))
@@ -53,6 +45,21 @@ public class PlayerMovement : MonoBehaviour
 			crouch = false;
 		}
 
+		if (Input.GetButtonDown("Fire1"))
+        {
+            if (controller.checkPotion())
+            {
+				controller.m_JumpForce = 400f;
+				Debug.Log("Poder de pulo aumentada!");
+				controller.jumpPotions--;
+            } else
+            {
+				Debug.Log("Poção de pulo indisponível.");
+            }
+        }
+
+
+
 	}
 
 	void FixedUpdate()
@@ -60,6 +67,6 @@ public class PlayerMovement : MonoBehaviour
 		// Move our character
 		controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
 		jump = false;
-
+		controller.checkPotion();
 	}
 }

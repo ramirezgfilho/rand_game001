@@ -137,7 +137,7 @@ public class CharacterController2D : MonoBehaviour
 			
 
 			Debug.Log("Pulou!");
-			m_JumpForce = 200f;
+			m_JumpForce = 250f;
 		}
 	}
 

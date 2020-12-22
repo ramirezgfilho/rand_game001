@@ -35,6 +35,120 @@ TextureImporter:
   - first:
       213: 4409867477321305065
     second: Idle (78x58)_10
+  - first:
+      213: -5167763124455122343
+    second: Idle (78x58)_0
+  - first:
+      213: -7567207587542750730
+    second: Idle (78x58)_1
+  - first:
+      213: -2874921228405002910
+    second: Idle (78x58)_2
+  - first:
+      213: 3620802492889551475
+    second: Idle (78x58)_3
+  - first:
+      213: 1667515756404832292
+    second: Idle (78x58)_4
+  - first:
+      213: -2740308198169503233
+    second: Idle (78x58)_5
+  - first:
+      213: 5271102370117908295
+    second: Idle (78x58)_6
+  - first:
+      213: -3192801494309578480
+    second: Idle (78x58)_7
+  - first:
+      213: 4085074827348859846
+    second: Idle (78x58)_8
+  - first:
+      213: 7955821226333942202
+    second: Idle (78x58)_9
+  - first:
+      213: -2704240153091177107
+    second: Idle (78x58)_10
+  - first:
+      213: -4893736469308287787
+    second: Idle (78x58)_11
+  - first:
+      213: -2936785474556931812
+    second: Idle (78x58)_12
+  - first:
+      213: -1374300519631723380
+    second: Idle (78x58)_13
+  - first:
+      213: 1759068481544067779
+    second: Idle (78x58)_14
+  - first:
+      213: 5032393792656067833
+    second: Idle (78x58)_15
+  - first:
+      213: -4289890661124675271
+    second: Idle (78x58)_16
+  - first:
+      213: -6272259345404465294
+    second: Idle (78x58)_17
+  - first:
+      213: -6408951470800601422
+    second: Idle (78x58)_18
+  - first:
+      213: -6851321387787389593
+    second: Idle (78x58)_19
+  - first:
+      213: -7384974417780134307
+    second: Idle (78x58)_20
+  - first:
+      213: -3267854850950982308
+    second: Idle (78x58)_21
+  - first:
+      213: 6606243396777864823
+    second: Idle (78x58)_22
+  - first:
+      213: -2166217126529113060
+    second: Idle (78x58)_23
+  - first:
+      213: -8421915786733492511
+    second: Idle (78x58)_24
+  - first:
+      213: 5406188897873281885
+    second: Idle (78x58)_25
+  - first:
+      213: -5860658318226394460
+    second: Idle (78x58)_26
+  - first:
+      213: -1871520919217880963
+    second: Idle (78x58)_27
+  - first:
+      213: 7673862495069996314
+    second: Idle (78x58)_28
+  - first:
+      213: 7683161824995748893
+    second: Idle (78x58)_29
+  - first:
+      213: 6000032294395688615
+    second: Idle (78x58)_30
+  - first:
+      213: -4022133034397518242
+    second: Idle (78x58)_31
+  - first:
+      213: -7261873664243018093
+    second: Idle (78x58)_32
+  - first:
+      213: 8326909503141314334
+    second: Idle (78x58)_33
+  - first:
+      213: 2601341422779675056
+    second: Idle (78x58)_34
+  - first:
+      213: -8699932237217557010
+    second: Idle (78x58)_35
+  - first:
+      213: 1634431783249501409
+    second: Idle (78x58)_36
+  - first:
+      213: -824485727492908662
+    second: Idle (78x58)_37
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -195,12 +309,12 @@ TextureImporter:
       name: Idle (78x58)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 78
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 9
+        y: 14
+        width: 37
+        height: 26
+      alignment: 9
+      pivot: {x: 0.6216216, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -216,12 +330,12 @@ TextureImporter:
       name: Idle (78x58)_1
       rect:
         serializedVersion: 2
-        x: 78
-        y: 0
-        width: 78
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 87
+        y: 14
+        width: 37
+        height: 26
+      alignment: 9
+      pivot: {x: 0.6216216, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -237,12 +351,12 @@ TextureImporter:
       name: Idle (78x58)_2
       rect:
         serializedVersion: 2
-        x: 156
-        y: 0
-        width: 78
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 165
+        y: 14
+        width: 37
+        height: 26
+      alignment: 9
+      pivot: {x: 0.6216216, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -258,12 +372,12 @@ TextureImporter:
       name: Idle (78x58)_3
       rect:
         serializedVersion: 2
-        x: 234
-        y: 0
-        width: 78
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 243
+        y: 14
+        width: 37
+        height: 26
+      alignment: 9
+      pivot: {x: 0.6216216, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -279,12 +393,12 @@ TextureImporter:
       name: Idle (78x58)_4
       rect:
         serializedVersion: 2
-        x: 312
-        y: 0
-        width: 78
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 321
+        y: 14
+        width: 37
+        height: 26
+      alignment: 9
+      pivot: {x: 0.6216216, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -300,12 +414,12 @@ TextureImporter:
       name: Idle (78x58)_5
       rect:
         serializedVersion: 2
-        x: 390
-        y: 0
-        width: 78
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 399
+        y: 14
+        width: 37
+        height: 26
+      alignment: 9
+      pivot: {x: 0.6216216, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -321,12 +435,12 @@ TextureImporter:
       name: Idle (78x58)_6
       rect:
         serializedVersion: 2
-        x: 468
-        y: 0
-        width: 78
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 477
+        y: 14
+        width: 37
+        height: 27
+      alignment: 9
+      pivot: {x: 0.6216216, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -342,12 +456,12 @@ TextureImporter:
       name: Idle (78x58)_7
       rect:
         serializedVersion: 2
-        x: 546
-        y: 0
-        width: 78
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 555
+        y: 14
+        width: 37
+        height: 28
+      alignment: 9
+      pivot: {x: 0.6216216, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -363,12 +477,12 @@ TextureImporter:
       name: Idle (78x58)_8
       rect:
         serializedVersion: 2
-        x: 624
-        y: 0
-        width: 78
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 633
+        y: 14
+        width: 37
+        height: 28
+      alignment: 9
+      pivot: {x: 0.6216216, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -384,12 +498,12 @@ TextureImporter:
       name: Idle (78x58)_9
       rect:
         serializedVersion: 2
-        x: 702
-        y: 0
-        width: 78
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 711
+        y: 14
+        width: 37
+        height: 27
+      alignment: 9
+      pivot: {x: 0.6216216, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -405,12 +519,12 @@ TextureImporter:
       name: Idle (78x58)_10
       rect:
         serializedVersion: 2
-        x: 780
-        y: 0
-        width: 78
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 789
+        y: 14
+        width: 37
+        height: 26
+      alignment: 9
+      pivot: {x: 0.6216216, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

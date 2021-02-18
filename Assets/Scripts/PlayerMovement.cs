@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 	bool jump = false;
 	bool crouch = false;
 	public float walking = 0f;
-	public Animator anim;
+	//public Animator anim;
 
 	// Update is called once per frame
 	void Update()
@@ -23,11 +23,11 @@ public class PlayerMovement : MonoBehaviour
 
 		if (horizontalMove != 0 )
         {
-			anim.SetFloat("Speed", horizontalMove);
-			anim.SetBool("Andando", true);
+			//anim.SetFloat("Speed", horizontalMove);
+			//anim.SetBool("Andando", true);
 		} else
         {
-			anim.SetBool("Andando", false);
+			//anim.SetBool("Andando", false);
 		}
 
 

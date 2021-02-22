@@ -204,9 +204,8 @@ GameObject:
   - component: {fileID: 116490252}
   - component: {fileID: 116490251}
   - component: {fileID: 116490248}
-  - component: {fileID: 116490249}
-  - component: {fileID: 116490253}
   - component: {fileID: 116490254}
+  - component: {fileID: 116490249}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -253,12 +252,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ce40eec8bbb6cdf4f8331ddbdbc03f57, type: 3}
+  m_Sprite: {fileID: -8858170366057619215, guid: 4d8dfea1a18e1c34f8b0ee8a2ffb8966,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.5, y: 0.37}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -273,7 +273,7 @@ Transform:
   m_GameObject: {fileID: 116490245}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.6382, y: -0.377, z: -10.819336}
-  m_LocalScale: {x: 0.3670766, y: 0.3670766, z: 0.3670766}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 746777534}
   - {fileID: 843430589}
@@ -294,62 +294,38 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0024725795, y: 0.01046446}
+  m_Offset: {x: 0.00013744086, y: -0.00032423437}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.86, y: 0.86}
-    newSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 0.2, y: 0.24}
+    newSize: {x: 0.5, y: 0.37}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8580488, y: 0.82267743}
+  m_Size: {x: 0.13981174, y: 0.1674321}
   m_EdgeRadius: 0
---- !u!20 &116490249
-Camera:
+--- !u!95 &116490249
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116490245}
   m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e5cd5b7326bb834b9188a5c0f4968e9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &116490250
 Rigidbody2D:
   serializedVersion: 4
@@ -364,8 +340,8 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_AngularDrag: 0
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -384,8 +360,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 116490252}
-  runSpeed: 18
+  runSpeed: 11
   walking: 0
+  anim: {fileID: 116490249}
 --- !u!114 &116490252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,6 +385,8 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 746777534}
   m_CeilingCheck: {fileID: 843430589}
   m_CrouchDisableCollider: {fileID: 0}
+  m_Grounded: 0
+  playerMovement: {fileID: 116490251}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -416,26 +395,6 @@ MonoBehaviour:
       m_Calls: []
   jumpPotions: 0
   hasPotion: 0
---- !u!114 &116490253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116490245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AssetsPPU: 100
-  m_RefResolutionX: 320
-  m_RefResolutionY: 180
-  m_UpscaleRT: 0
-  m_PixelSnapping: 0
-  m_CropFrameX: 0
-  m_CropFrameY: 0
-  m_StretchFill: 0
 --- !u!114 &116490254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,7 +420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 307416356}
   - component: {fileID: 307416355}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -718,7 +677,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240555837}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.659, y: 0.128, z: 0}
+  m_LocalPosition: {x: 0.129, y: -0.035, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 116490247}
@@ -19046,7 +19005,7 @@ MonoBehaviour:
   m_Follow: {fileID: 116490247}
   m_Lens:
     FieldOfView: 23
-    OrthographicSize: 3.07
+    OrthographicSize: 0.76
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -19162,7 +19121,7 @@ Camera:
   far clip plane: 1000
   field of view: 23
   orthographic: 1
-  orthographic size: 3.07
+  orthographic size: 0.76
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -19186,7 +19145,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1474212450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6382, y: 0.45319828, z: -20.819336}
+  m_LocalPosition: {x: -1.6382, y: -0.377, z: -20.819336}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1369223063}
@@ -19237,7 +19196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 0.8301983, z: 0}
+  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0

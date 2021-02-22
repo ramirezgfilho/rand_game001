@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 	bool jump = false;
 	bool crouch = false;
 	public float walking = 0f;
-	//public Animator anim;
+	public Animator anim;
 
 	// Update is called once per frame
 	void Update()
@@ -23,17 +23,19 @@ public class PlayerMovement : MonoBehaviour
 
 		if (horizontalMove != 0 )
         {
-			//anim.SetFloat("Speed", horizontalMove);
-			//anim.SetBool("Andando", true);
+			anim.SetFloat("Speed", horizontalMove);
+			anim.SetBool("Andando", true);
 		} else
         {
-			//anim.SetBool("Andando", false);
+			anim.SetBool("Andando", false);
 		}
 
 
 		if (Input.GetButtonDown("Jump"))
 		{
 			jump = true;
+			//anim.SetBool("Pulo", true);
+
 		}
 
 		if (Input.GetButtonDown("Vertical"))
@@ -45,8 +47,10 @@ public class PlayerMovement : MonoBehaviour
 			crouch = false;
 		}
 
-		if (Input.GetButtonDown("Fire1"))
+		if (Input.GetButtonDown("Fire2"))
         {
+
+
             if (controller.checkPotion())
             {
 				controller.m_JumpForce = 400f;
@@ -58,6 +62,11 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
+		if(Input.GetButtonDown("Fire1"))
+        {
+			anim.SetTrigger("Attack");
+		}
+
 
 
 	}
@@ -68,5 +77,6 @@ public class PlayerMovement : MonoBehaviour
 		controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
 		jump = false;
 		controller.checkPotion();
+
 	}
 }

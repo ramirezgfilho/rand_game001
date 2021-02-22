@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 251316109469992080}
   - component: {fileID: 251316109469992083}
   - component: {fileID: 8665843854282294505}
+  - component: {fileID: 2721197250051873436}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -27,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251316109469992082}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.008726558, y: 0, z: 0, w: 0.999962}
   m_LocalPosition: {x: -1.219, y: -0.43305242, z: -11.638177}
-  m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1, y: 0, z: 0}
 --- !u!212 &251316109469992081
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -73,9 +74,10 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 379074469b9a63d4298fa46632758e44, type: 3}
+  m_Sprite: {fileID: -2068811584313519182, guid: 4d8dfea1a18e1c34f8b0ee8a2ffb8966,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.16, y: 0.12}
@@ -118,9 +120,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0033044815, y: 0.010968655}
   serializedVersion: 2
-  m_Radius: 0.08
+  m_Radius: 0.033157587
 --- !u!114 &8665843854282294505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,8 +135,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4e623f9027bf8e40a28ccf8ed4ca2d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 8
   rb: {fileID: 251316109469992080}
   damage: 40
   impactEffect: {fileID: 4253407355912237574, guid: 95dfb1dd4a18f7c44bfca096643f8f6c,
     type: 3}
+--- !u!95 &2721197250051873436
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251316109469992082}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e8c6ec22dd094024684b6d6eb0a44a3d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
